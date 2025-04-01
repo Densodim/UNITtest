@@ -1,3 +1,7 @@
+const SUNDAY = 0;
+const SATURDAY = 6;
+const MONDAY = 1;
+
 const verifyPassword = (input, rules) => {
   const error = [];
   rules.forEach((rule) => {
