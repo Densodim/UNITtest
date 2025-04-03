@@ -1,6 +1,6 @@
-const verifyPassword = require("../src/verifyPassword.js");
+const verifyPassword = require("../src/Password/verifyPassword");
 
-class PasswordVirifier1 {
+class PasswordVerifier1 {
   constructor() {
     this.rules = [];
   }
@@ -24,7 +24,7 @@ class PasswordVirifier1 {
   }
 }
 
-const makeVerifier = () => new PasswordVirifier1();
+const makeVerifier = () => new PasswordVerifier1();
 const passingRule = (input) => ({ passed: true, reason: "" });
 
 const makeVerifierWithPassingRule = () => {
